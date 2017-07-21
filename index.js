@@ -14,7 +14,7 @@
 const Alexa = require('alexa-sdk');
 const recipes = require('./recipes');
 
-const APP_ID = 'amzn1.ask.skill.5df09f66-0473-41e1-84be-8324fda07e89'; // TODO replace with your app ID (OPTIONAL).
+const APP_ID = 'amzn1.ask.skill.a9718b9f-dc30-4b39-8143-90d3099a585f'; // TODO replace with your app ID (OPTIONAL).
 
 const languageStrings = {
     'en': {
@@ -37,13 +37,13 @@ const languageStrings = {
     'en-US': {
         translation: {
             RECIPES: recipes.RECIPE_EN_US,
-            SKILL_NAME: 'American Minecraft Helper',
+            SKILL_NAME: 'American Kitchen Party Planner',
         },
     },
     'en-GB': {
         translation: {
             RECIPES: recipes.RECIPE_EN_GB,
-            SKILL_NAME: 'British Minecraft Helper',
+            SKILL_NAME: 'British Kitchen Party Planner',
         },
     },
     'de': {
