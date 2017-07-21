@@ -1,3 +1,5 @@
+let dbhelper = require("../database")
+
 module.exports = {
     'LaunchRequest': function () {
         this.attributes.speechOutput = this.t('WELCOME_MESSAGE', this.t('SKILL_NAME'));
@@ -5,6 +7,10 @@ module.exports = {
         // understood, they will be prompted again with this text.
         this.attributes.repromptSpeech = this.t('WELCOME_REPROMT');
         this.emit(':ask', this.attributes.speechOutput, this.attributes.repromptSpeech);
+    },
+    'CreatePartyIntent': function () {
+      let test = dbhelper.createParty()
+      this.emit(':tell', 'Hello World!')
     },
     'RecipeIntent': function () {
         const itemSlot = this.event.request.intent.slots.Item;
